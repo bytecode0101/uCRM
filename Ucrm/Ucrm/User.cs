@@ -8,6 +8,5 @@ namespace Ucrm
 {
     class User
     {
-
     }
 }
