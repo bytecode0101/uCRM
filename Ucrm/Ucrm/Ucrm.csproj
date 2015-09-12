@@ -43,6 +43,7 @@
     <Compile Include="Address.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="ConflictGenerator.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="PF.cs" />
     <Compile Include="PJ.cs" />
