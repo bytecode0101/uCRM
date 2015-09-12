@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    class Class1
+    class PJ
     {
-        //testc ioana
     }
 }
