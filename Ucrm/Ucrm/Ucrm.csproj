@@ -44,7 +44,6 @@
     <Compile Include="Cart.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Delivery.cs" />
-    <Compile Include="ConflictGenerator.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderStatus.cs" />
     <Compile Include="Payment.cs" />
