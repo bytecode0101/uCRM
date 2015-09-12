@@ -43,6 +43,9 @@
     <Compile Include="Category.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Id.cs" />
+    <Compile Include="PF.cs" />
+    <Compile Include="PJ.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
