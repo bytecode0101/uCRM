@@ -43,14 +43,20 @@
     <Compile Include="Address.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="Delivery.cs" />
     <Compile Include="ConflictGenerator.cs" />
     <Compile Include="Order.cs" />
+    <Compile Include="OrderStatus.cs" />
+    <Compile Include="Payment.cs" />
     <Compile Include="PF.cs" />
     <Compile Include="PJ.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Role.cs" />
     <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documentation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
