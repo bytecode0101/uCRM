@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Category.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Id.cs" />
     <Compile Include="PF.cs" />
     <Compile Include="PJ.cs" />
