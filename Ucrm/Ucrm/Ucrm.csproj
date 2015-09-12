@@ -43,7 +43,10 @@
     <Compile Include="Address.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="Delivery.cs" />
     <Compile Include="Order.cs" />
+    <Compile Include="OrderStatus.cs" />
+    <Compile Include="Payment.cs" />
     <Compile Include="PF.cs" />
     <Compile Include="PJ.cs" />
     <Compile Include="Product.cs" />
