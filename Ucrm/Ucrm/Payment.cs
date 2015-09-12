@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    class Role
+    public enum Payment
     {
+        Cash = 0,
+        Card = 1,
+        Op = 2
     }
+
+
 }

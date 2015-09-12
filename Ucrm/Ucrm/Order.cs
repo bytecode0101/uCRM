@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    class Role
+    class Order
     {
     }
 }
