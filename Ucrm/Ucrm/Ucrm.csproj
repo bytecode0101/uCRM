@@ -54,8 +54,9 @@
     <Compile Include="Role.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Documentation\" />
+    <None Include="Documentation\Gestionare Campanii%28Promotii%29%281%29.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
