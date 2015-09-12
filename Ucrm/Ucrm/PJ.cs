@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    class PJ
+    public class PJ
     {
+        string CUI { get; set; }
+        string IBAN { get; set; }
+        string J { get; set; }
     }
 }

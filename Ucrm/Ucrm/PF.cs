@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    class PF
+    public class PF
     {
+        string CNP { get; set; }            
     }
 }
