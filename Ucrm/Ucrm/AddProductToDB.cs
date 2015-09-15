@@ -8,9 +8,11 @@ namespace Ucrm
 {
     class AddProductToDB
     {
-        //add type
-        //add name
-        //SearchProduct
+        
+        public void AddProdName(string prodName)
+        {
+            // Add product type @DB
+        }
 
         public void AddProdCategory(string catName)
         {
@@ -20,6 +22,16 @@ namespace Ucrm
         public void AddProdSubCategory(string catName)
         {
             //AddSubCat @database   
+        }
+
+        public void AddProdType(string typeName)
+        {
+            // Add product type @DB
+        }
+
+        public void SrcProduct(string srcProdName)
+        {
+            //Search a produc in the DB by its name/id/other criteria
         }
     }
 }
