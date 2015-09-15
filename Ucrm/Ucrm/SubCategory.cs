@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
+    /// <summary>
+    /// 
+    /// </summary>
+
     class SubCategory
     {
         public Guid id { get; set; }
