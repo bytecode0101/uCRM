@@ -8,6 +8,9 @@ namespace Ucrm
 {
     class Address
     {
+        /// <summary>
+        /// Holds address details of users
+        /// </summary>
         public string City { get; set; }
         public string Country { get; set; }
         public string Street { get; set; }
@@ -15,6 +18,17 @@ namespace Ucrm
         public string Extra { get; set; }
         public string Phone { get; set; }
 
-        
+        public Address()
+        {
+
+        }
+
+        User SomeUser = new User();
+        public void SetId()
+        {
+            get SomeUser
+        }
+
+                
     }
 }

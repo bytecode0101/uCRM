@@ -1,21 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ucrm
 {
     class Cart
     {
         /// <summary>
-        /// 
+        /// Cart class to generate Carts
         /// </summary>
 
 
-        public Guid Id { get; set; }
-        public Guid UserId { get; set; }
-        public Dictionary <Product, int>  Items { get; set; }
+        public Guid Id { get; set; } //Cart ID
+        public Guid UserId { get; set; } // ID of theuser who created the cart
+        public Dictionary <Product, int>  Items { get; set; } // List of Products and number of each Product
 
         public Cart( Guid _UserId)
         {
@@ -24,8 +21,10 @@ namespace Ucrm
             this.Items = new Dictionary<Product, int> { };
         }
 
-        //
-        //
+       /// <summary>
+       /// The RemoveItemFromCart method deletes an item from cart at a certain position.
+       /// </summary>
+       /// <param name="prodlist">prodlist is a Dictionary parameter that allows us to delete a Dictionary entry</param>
         public void RemoveItemFromCart(Dictionary<Product, int> prodlist)
         {
             prodlist.Remove(new Product());

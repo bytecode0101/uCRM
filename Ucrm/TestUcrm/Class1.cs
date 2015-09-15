@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucrm
-
-{/// <summary>
-/// 
-/// </summary>
-    class SetPrice
+namespace TestUcrm
+{
+    public class Class1
     {
-
     }
 }
