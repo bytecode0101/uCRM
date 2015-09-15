@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="AddProductToDB.cs" />
     <Compile Include="Address.cs" />
+    <Compile Include="Bill.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Delivery.cs" />
