@@ -9,7 +9,7 @@ namespace Ucrm
     class Order : Cart
     {
         /// <summary>
-        /// 
+        /// Order class extends cart class. OrderButton transforms a Cart in an Order
         /// </summary>
 
 

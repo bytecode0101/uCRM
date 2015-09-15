@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Ucrm
 {
     /// <summary>
-    /// 
+    /// Category class for categories products 
     /// </summary>
 
     class Category

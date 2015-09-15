@@ -9,7 +9,7 @@ namespace Ucrm
     class Cart
     {
         /// <summary>
-        /// 
+        /// Cart class to generate Carts
         /// </summary>
 
 
