@@ -26,7 +26,6 @@ namespace Ucrm
         User SomeUser = new User();
         public void SetId()
         {
-            get SomeUser
         }
 
                 
