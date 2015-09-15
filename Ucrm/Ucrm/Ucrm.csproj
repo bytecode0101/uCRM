@@ -46,6 +46,7 @@
     <Compile Include="Delivery.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderStatus.cs" />
+    <Compile Include="Pay.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="PF.cs" />
     <Compile Include="PJ.cs" />
