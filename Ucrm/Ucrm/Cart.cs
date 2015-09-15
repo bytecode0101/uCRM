@@ -3,11 +3,12 @@ using System.Collections.Generic;
 
 namespace Ucrm
 {
+    /// <summary>
+    /// Cart class to generate Carts
+    /// </summary>
     class Cart
     {
-        /// <summary>
-        /// Cart class to generate Carts
-        /// </summary>
+        
 
 
         public Guid Id { get; set; } //Cart ID
