@@ -8,5 +8,7 @@ namespace Ucrm
 {
     class Test21
     {
+
+        //TODO: define properties
     }
 }
