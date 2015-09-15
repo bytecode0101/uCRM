@@ -6,14 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    class Pricing
+    class RemoveProduct
     {
-        public void SetPrice( /*product identifier, discount = 0/1/x?*/)
-        {
-
-        }
-
-        
-
     }
 }

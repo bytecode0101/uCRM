@@ -24,6 +24,7 @@ namespace Ucrm
         public void RemoveItemFromCart(Dictionary<Product, int> prodlist)
         {
             prodlist.Remove(new Product());
+            //remove product from cart based on its id/name/its placement in the product List
         }
     }
 }
