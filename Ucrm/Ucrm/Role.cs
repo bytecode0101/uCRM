@@ -8,5 +8,10 @@ namespace Ucrm
 {
     class Role
     {
+        public string Desc { get; set; }
+        public string Name { get; set; }
+
+        
     }
+    
 }
