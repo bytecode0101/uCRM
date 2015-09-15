@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ucrm
 {
+    /// <summary>
+    /// Order class extends cart class. OrderButton transforms a Cart in an Order
+    /// </summary>
     class Order : Cart
     {
-        /// <summary>
-        /// Order class extends cart class. OrderButton transforms a Cart in an Order
-        /// </summary>
-
-
         public DateTime SetTime { get; set; }
         public DateTime ConfirmedTime { get; set; }
         public OrderStatus Status { get; set; }
@@ -20,13 +14,13 @@ namespace Ucrm
         public Delivery Delivery { get; set; }
         public DateTime DeliveryTime { get; set; }
 
-        public Order (Guid _UserId) : base (_UserId)
+        public Order(Guid _UserId) : base(_UserId)
         {
-            
+
 
         }
 
-        public void AddProduct (Guid ProductId)
+        public void AddProduct(Guid ProductId)
         {
 
 
