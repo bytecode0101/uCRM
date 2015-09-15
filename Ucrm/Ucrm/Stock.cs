@@ -50,7 +50,7 @@ namespace Ucrm
         {
             ///if the stock does not contain the product yet, then we shoud just add it
             /// if the sotck contains the product then we will add the wuatity to the existing quantity
-            if (!productStock.ContainsKey(p))
+            if (!productStock.ContainsKey(productId))
             {
                 AddNewProduct(productId, quantity);
             }
