@@ -64,6 +64,7 @@
     <Compile Include="SearchProduct.cs" />
     <Compile Include="SetPrice.cs" />
     <Compile Include="ShowCart.cs" />
+    <Compile Include="Stock.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -5,11 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ucrm
-/// 
-/// 
-///
 {
-    class ShowCart
+    class Class1
     {
     }
 }
