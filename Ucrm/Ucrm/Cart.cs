@@ -6,7 +6,7 @@ namespace Ucrm
     /// <summary>
     /// Cart class to generate Carts
     /// </summary>
-    class Cart
+    public class Cart
     {
         
 
