@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ucrm
 {
@@ -15,7 +12,7 @@ namespace Ucrm
 
         public Guid Id { get; set; } //Cart ID
         public Guid UserId { get; set; } // ID of theuser who created the cart
-        public Dictionary <Product, int>  Items { get; set; } // List of Producs and number of each Product
+        public Dictionary <Product, int>  Items { get; set; } // List of Products and number of each Product
 
         public Cart( Guid _UserId)
         {

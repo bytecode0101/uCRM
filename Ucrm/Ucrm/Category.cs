@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ucrm
 {
@@ -15,4 +11,7 @@ namespace Ucrm
         public Guid Id { get; set; } //Category ID
         public string Name { get; set; } //Name ofthe category
     }
+
+    
+
 }
