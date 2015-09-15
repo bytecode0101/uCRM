@@ -8,6 +8,11 @@ namespace Ucrm
 {
     class Cart
     {
+        /// <summary>
+        /// 
+        /// </summary>
+
+
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
         public Dictionary <Product, int>  Items { get; set; }
