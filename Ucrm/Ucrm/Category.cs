@@ -12,6 +12,15 @@ namespace Ucrm
         public string Name { get; set; } //Name ofthe category
     }
 
-    
+    /// <summary>
+    /// Category constructor
+    /// </summary>
+    /// <param name="_Name"></param>
+    public Category( string _Name)
+    {
+        this.Id = Guid.NewGuid();
+        this.Name = _Name;
+        
+    }
 
 }
