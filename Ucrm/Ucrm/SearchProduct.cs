@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ucrm
+
+{/// <summary>
 /// 
-/// 
-///
-{
+/// </summary>
     class SearchProduct
     {
     }

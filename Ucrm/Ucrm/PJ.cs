@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ucrm
-{
+{/// <summary>
+/// 
+/// </summary>
     public class PJ
     {
         string CUI { get; set; }
