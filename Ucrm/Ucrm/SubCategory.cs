@@ -10,9 +10,9 @@ namespace Ucrm
     /// 
     /// </summary>
 
-    class Category
+    class SubCategory
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
+        public Guid id { get; set; }
+        public string NameSubCat { get; set; }
     }
 }

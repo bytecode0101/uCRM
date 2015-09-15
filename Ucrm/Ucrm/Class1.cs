@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    class Test21
+    class Class1
     {
     }
 }
