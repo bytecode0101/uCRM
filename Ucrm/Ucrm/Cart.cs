@@ -24,8 +24,10 @@ namespace Ucrm
             this.Items = new Dictionary<Product, int> { };
         }
 
-        //
-        //
+       /// <summary>
+       /// The RemoveItemFromCart method deletes an item from cart at a certain position.
+       /// </summary>
+       /// <param name="prodlist">prodlist is a Dictionary parameter that allows us to delete a Dictionary entry</param>
         public void RemoveItemFromCart(Dictionary<Product, int> prodlist)
         {
             prodlist.Remove(new Product());
