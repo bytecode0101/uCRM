@@ -48,6 +48,7 @@
     <Compile Include="Category.cs" />
     <Compile Include="ChooseCategory.cs" />
     <Compile Include="Delivery.cs" />
+    <Compile Include="Invoice.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderStatus.cs" />
     <Compile Include="Pay.cs" />
