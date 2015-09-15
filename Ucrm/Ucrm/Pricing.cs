@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    /// <summary>
-    /// 
-    /// </summary>
-
-    class Category
+    class Pricing
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
+        public void SetPrice( /*product identifier, discount = 0/1/x?*/)
+        {
+
+        }
+
+        
+
     }
 }

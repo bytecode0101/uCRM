@@ -8,6 +8,11 @@ namespace Ucrm
 {
     class Cart
     {
+        /// <summary>
+        /// 
+        /// </summary>
+
+
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
         public Dictionary <Product, int>  Items { get; set; }
@@ -24,6 +29,7 @@ namespace Ucrm
         public void RemoveItemFromCart(Dictionary<Product, int> prodlist)
         {
             prodlist.Remove(new Product());
+            //remove product from cart based on its id/name/its placement in the product List
         }
     }
 }

@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    /// <summary>
-    /// 
-    /// </summary>
-
-    class Category
+    class Class1
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
     }
 }

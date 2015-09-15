@@ -10,28 +10,21 @@ namespace Ucrm
     {
         public void CheckPaymentMethod()
         {
-            //if cash
-            //if banca
-            //if op
+            //if "cash" follow cash procedure
+            //if "banca" follow bank procedure
+            //if "op" follow op procedure
         }
 
         public bool CheckPaymentStatus()
         {
-            //if ()
-            //{
-            //    return true;
-            //}
-            //else
-            //{
-            //    return false;
-            //}
+            //check if the payment was recieved
             return true;
         }
 
 
         public void RegisterPayment()
         {
-            //inreg plata in system.. daca avem alocata o baza de data sau inregistrari particularizate pentru clienti PJ
+            //register payment
         }
 
 

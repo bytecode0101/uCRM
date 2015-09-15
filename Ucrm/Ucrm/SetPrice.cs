@@ -5,14 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ucrm
+     ///
+     ///
+     ///    
 {
-    /// <summary>
-    /// 
-    /// </summary>
-
-    class Category
+    class SetPrice
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
+
     }
 }
