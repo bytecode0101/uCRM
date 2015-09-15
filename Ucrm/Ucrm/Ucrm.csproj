@@ -61,7 +61,6 @@
     <Compile Include="RemoveProduct.cs" />
     <Compile Include="ReturnProduct.cs" />
     <Compile Include="Role.cs" />
-    <Compile Include="Test2.cs" />
     <Compile Include="SearchProduct.cs" />
     <Compile Include="SetPrice.cs" />
     <Compile Include="ShowCart.cs" />
