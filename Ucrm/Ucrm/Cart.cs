@@ -19,5 +19,11 @@ namespace Ucrm
             this.Items = new Dictionary<Product, int> { };
         }
 
+        //
+        //
+        public void RemoveItemFromCart(Dictionary<Product, int> prodlist)
+        {
+            prodlist.Remove(new Product());
+        }
     }
 }
