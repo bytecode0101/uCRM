@@ -40,18 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProductToDB.cs" />
     <Compile Include="Address.cs" />
+    <Compile Include="Bill.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Delivery.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderStatus.cs" />
+    <Compile Include="Pay.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="PF.cs" />
     <Compile Include="PJ.cs" />
+    <Compile Include="Pricing.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnProduct.cs" />
     <Compile Include="Role.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
