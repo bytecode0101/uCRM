@@ -35,32 +35,50 @@ namespace Ucrm
         /// <summary>
         /// This will add a new Product to our sstock
         /// </summary>
-        /// <param name="p"></param>
+        /// <param name="productId"></param>
         /// <param name="quantity"></param>
-        private void AddNewProduct (Guid p,int quantity)
+        private void AddNewProduct (Guid productId,int quantity)
         {
-            productStock.Add(p, quantity);
+            productStock.Add(productId, quantity);
         }
         /// <summary>
         /// This will add a new quantity to a specific product
         /// </summary>
-        /// <param name="p"></param>
+        /// <param name="productId"></param>
         /// <param name="quantity"></param>
-        private void AddQuantity(Guid p, int quantity)
+        public void AddQuantity(Guid productId, int quantity)
         {
             ///if the stock does not contain the product yet, then we shoud just add it
             /// if the sotck contains the product then we will add the wuatity to the existing quantity
             if (!productStock.ContainsKey(p))
             {
-                AddNewProduct(p, quantity);
+                AddNewProduct(productId, quantity);
             }
             else
             {
-                productStock[p]+=quantity;
-            }
-                
-
-                
+                productStock[productId] +=quantity;
+            }    
+        }
+        /// <summary>
+        /// This will remove quantity from the stock
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <param name="quantity"></param>
+        public void RemoveQuantity(Guid productId, int quantity)
+        {
+            ///if the stock  contains the product yet, then we will remove the quantity
+            /// if the stock contains less products than you would like to remove, then we should throw an error
+            if (productStock.ContainsKey(productId))
+            {
+                if (productStock[productId] >= quantity)
+                {
+                    productStock[productId] -= quantity;
+                }
+                else
+                {
+                    Console.Out.WriteLine("You have less items in stock than you would like to withdraw");
+                 }
+            } 
         }
 
     }
