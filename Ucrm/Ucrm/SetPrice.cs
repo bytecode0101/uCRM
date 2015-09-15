@@ -11,5 +11,6 @@ namespace Ucrm
 {
     class SetPrice
     {
+
     }
 }
