@@ -13,9 +13,9 @@ namespace Ucrm
         /// </summary>
 
 
-        public Guid Id { get; set; }
-        public Guid UserId { get; set; }
-        public Dictionary <Product, int>  Items { get; set; }
+        public Guid Id { get; set; } //Cart ID
+        public Guid UserId { get; set; } // ID of theuser who created the cart
+        public Dictionary <Product, int>  Items { get; set; } // List of Producs and number of each Product
 
         public Cart( Guid _UserId)
         {
