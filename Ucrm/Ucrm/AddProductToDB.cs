@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
+    /// <summary>
+    /// AddProductToDB class adds a product to the database based on some criteria
+    /// </summary>
     class AddProductToDB
     {
         
         public void AddProdName(string prodName)
         {
-            // Add product type @DB
+            // Add product name @DB
         }
 
         public void AddProdCategory(string catName)
