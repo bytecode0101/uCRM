@@ -6,7 +6,7 @@ namespace Ucrm
     /// Category class for categories products 
     /// </summary>
 
-    class Category
+    public class Category
     {
         public Guid Id { get; set; } //Category ID
         public string Name { get; set; } //Name ofthe category
@@ -20,7 +20,6 @@ namespace Ucrm
         {
             this.Id = Guid.NewGuid();
             this.Name = _Name;
-
-        }
+        }        
     }
 }
