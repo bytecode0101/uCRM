@@ -47,7 +47,6 @@
     <Compile Include="TestCart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCountry.cs" />
-    <Compile Include="TestOrder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
