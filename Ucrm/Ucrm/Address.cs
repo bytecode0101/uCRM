@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ucrm
 {
-    class Address
+    public class Address
     {
         /// <summary>
         /// Holds address details of users
@@ -23,9 +23,32 @@ namespace Ucrm
 
         }
 
-        User SomeUser = new User();
-        public void SetId()
+        public string SelectCountry()
         {
+            ///Populate countries list for user to select and print to screen
+
+            string[] Countries = { "Afganistan", "Algeria", "Albania","Algeria", "Andorra", "Angola", "Anguilla",
+                "Argentina","Bahrain", "Canada","Chile", "China","Colombia"};
+                            
+
+                foreach (var country in Countries)
+                {
+                    Console.WriteLine(country);
+                }
+
+            string mycountry = "";
+            int CountryLocation = Array.IndexOf(Countries, mycountry);
+            string CountrySelected = Countries[CountryLocation];
+            Console.WriteLine(CountrySelected);
+
+            return CountrySelected;
+                 
+
+        }
+
+        public void SelectCity()
+        {
+
         }
 
                 
