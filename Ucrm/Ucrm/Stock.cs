@@ -37,7 +37,7 @@ namespace Ucrm
         /// </summary>
         /// <param name="productId"></param>
         /// <param name="quantity"></param>
-        private void AddNewProduct (Guid productId,int quantity)
+        public void AddNewProduct (Guid productId,int quantity)
         {
             productStock.Add(productId, quantity);
         }

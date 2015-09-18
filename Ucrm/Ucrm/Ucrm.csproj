@@ -51,6 +51,7 @@
     <Compile Include="Cart.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="ChooseCategory.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="Delivery.cs" />
     <Compile Include="Invoice.cs" />
     <Compile Include="Order.cs" />
