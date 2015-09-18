@@ -48,8 +48,10 @@
     <Compile Include="AddProductToDB.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Bill.cs" />
+    <Compile Include="Campaign.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="Channel.cs" />
     <Compile Include="ChooseCategory.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Delivery.cs" />
@@ -58,10 +60,12 @@
     <Compile Include="OrderStatus.cs" />
     <Compile Include="Pay.cs" />
     <Compile Include="Payment.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="PF.cs" />
     <Compile Include="PJ.cs" />
     <Compile Include="Pricing.cs" />
     <Compile Include="Product.cs" />
+    <Compile Include="PromotionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveProduct.cs" />
     <Compile Include="ReturnProduct.cs" />

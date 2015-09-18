@@ -8,9 +8,6 @@ namespace Ucrm
     /// </summary>
     public class Cart
     {
-        
-
-
         public Guid Id { get; set; } //Cart ID
         public Guid UserId { get; set; } // ID of theuser who created the cart
         public Dictionary <Guid, int>  Items { get; set; } // List of Products and number of each Product
@@ -34,6 +31,11 @@ namespace Ucrm
             }
         }
 
+        /// <summary>
+        /// Adds an item to the cart
+        /// </summary>
+        /// <param name="product">The product type to be added to the cart</param>
+        /// <param name="quantity">quantity of products to be added</param>
         public void AddProduct(Product product, int quantity)
         {
             if (Items.ContainsKey(product.Id))
@@ -45,5 +47,11 @@ namespace Ucrm
                 Items.Add(product.Id, quantity);
             }
         }
+                
+        public void SubmitOrder()
+        {
+            var order1 = new Order(UserId, Items);
+        }
+
     }
 }
