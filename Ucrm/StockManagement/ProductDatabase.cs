@@ -16,19 +16,31 @@ namespace StockManagement
     {
         List<Product> listaProduse = new List<Product>();
 
+        /// <summary>
+        /// Add a product object, to the product list
+        /// </summary>
+        /// <param name="productobj"> - the object added @ productlist</param>
         public void AddProduct(Product productobj)
         {
             listaProduse.Add(productobj);
         }
 
-        public void RemoveProduct(string pname)
+        public void RemoveProduct(Product productobj)
         {
-
+            listaProduse.Remove(productobj);
         }
 
-        public void SearchProd(Product src_param)
+        public Product SearchProd(Product productobj,string srcname)
         {
-
+            foreach (var item in listaProduse)
+            {
+                if(item.ProdName == srcname)
+                {
+                    productobj = item;
+                }
+ 
+            }
+            return productobj;
         }
     }
 }
