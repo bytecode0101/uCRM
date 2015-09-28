@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace Ucrm
 
 {/// <summary>
-/// 
-/// </summary>
-    class SearchProduct
+ /// Search product by name, category or price. 
+ /// </summary>
+    public class SearchProduct
     {
+
     }
 }
