@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 namespace StockManagement
 {
@@ -10,14 +7,22 @@ namespace StockManagement
     /// </summary>
     public class PDBSerialisation
     {
-        public void LoadList()
+        string prodDB = "ProductDatabase.csv";
+        Stream stream;
+
+        public void LoadList(Product pobj)
         {
 
         }
 
-        public void UnloadList()
+        public void UnloadList(Product pobj)
         {
-
+            using(StreamWriter swo = new StreamWriter(stream, swo.Encoding))
+            {
+                swo.WriteLine(pobj.ProdName + " , " + pobj.ProdCategory + " , " + pobj.ProdSubCategory + " , " + pobj.Amount + " , " + pobj.ProdStatus + " , " + pobj.PId + " , " + pobj.ProdExtraInfo);
+                swo.Flush();
+               
+            }
         }
     }
 }
