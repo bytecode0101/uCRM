@@ -11,6 +11,9 @@ namespace Ucrm
         /// <summary>
         /// Holds address details of users
         /// </summary>
+        /// 
+
+
         public string City { get; set; }
         public string Country { get; set; }
         public string Street { get; set; }
@@ -22,10 +25,13 @@ namespace Ucrm
         {
 
         }
-
+        /// <summary>
+        /// Populate countries list for user to select and print to screen. Holds the country selected by user
+        /// </summary>
+        /// <returns></returns>
         public string SelectCountry()
         {
-            ///Populate countries list for user to select and print to screen
+            
 
             string[] Countries = { "Afganistan", "Algeria", "Albania","Algeria", "Andorra", "Angola", "Anguilla",
                 "Argentina","Bahrain", "Canada","Chile", "China","Colombia"};

@@ -55,7 +55,9 @@
     <Compile Include="ChooseCategory.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Delivery.cs" />
+    <Compile Include="ILogin.cs" />
     <Compile Include="Invoice.cs" />
+    <Compile Include="Login_user.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderStatus.cs" />
     <Compile Include="Pay.cs" />

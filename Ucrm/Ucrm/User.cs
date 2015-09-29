@@ -21,20 +21,16 @@ namespace Ucrm
         public Role userRole { get; set; }
         public string password { get; set; }
 
-    public User()
-        {
-        }
+        public Login_user login_user;
 
-        public void NoNullEntries() {
-            // protect against null entries in either name or password
-      
-            if (name == null || password == null)
-            {
-                throw new ArgumentNullException();
-            }
+        public User()
+        {
+
+        }
+                
 
         }
     }
        
-    }
+    
 
