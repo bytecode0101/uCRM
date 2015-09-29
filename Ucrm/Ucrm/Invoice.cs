@@ -6,7 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Ucrm
-{
+{/// <summary>
+/// Holds the details of the shopping cart for its assigned user and uses them to create invoice
+/// </summary>
     class Invoice
     {
         
@@ -24,6 +26,13 @@ namespace Ucrm
             Cart cart = new Cart(user.id);
             Product product = new Product();
          }   
+        /// <summary>
+        /// Method to create the invoice using the details of the user and his shopping cart
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="cart"></param>
+        /// <param name="address"></param>
+        /// <returns></returns>
             public DataTable MakeInvoice(User user, Cart cart, Address address)
         {
             DataTable invoice_details = new DataTable();
@@ -39,6 +48,17 @@ namespace Ucrm
 
             return invoice_details;
             
+        }
+        /// <summary>
+        /// Prints the invoice details according to the invoice resulted from MakeInvoice()
+        /// </summary>
+        /// <param name="invoice_details"></param>
+        public void PrintInvoice(DataTable invoice_details)
+        {
+            foreach (var DataRow in invoice_details.Rows)
+            {
+                Console.WriteLine(DataRow);
+            }
         }
 
         
