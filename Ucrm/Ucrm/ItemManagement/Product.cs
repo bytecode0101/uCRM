@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucrm
+namespace Ucrm.ItemManagement
 {
     public class Product
     {
@@ -15,5 +15,7 @@ namespace Ucrm
         public string Category { get; set; }
         public int NumberOfUnits { get; set; }
         public float SallerPrice { get; set; }
+
+        public List<Tag> Tags { get; set; }
     }
 }

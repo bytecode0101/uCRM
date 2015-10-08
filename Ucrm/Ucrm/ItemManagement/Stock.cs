@@ -1,20 +1,22 @@
 ﻿using System.Collections.Generic;
 using System;
+using System.ComponentModel;
 
-namespace Ucrm
+namespace Ucrm.ItemManagement
 {
     ///This is the stock of our products. 
     ///This will keep all of our products with the corresponding quantity
     ///
-    class Stock
+    class Stock : INotifyPropertyChanged
     {
         /// <summary>
         /// We use a dictionary in order to store the products associated with the corresponding quantity
         /// </summary>
         private Dictionary<Guid, int> productStock;
-      
-        ///constructor
-        public Stock() 
+
+        private List<Product> products;
+
+        public Stock()
         {
             productStock = new Dictionary<Guid, int>();
         }
@@ -32,15 +34,18 @@ namespace Ucrm
             }
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
         /// <summary>
         /// This will add a new Product to our sstock
         /// </summary>
         /// <param name="productId"></param>
         /// <param name="quantity"></param>
-        public void AddNewProduct (Guid productId,int quantity)
+        public void AddNewProduct(Guid productId, int quantity)
         {
             productStock.Add(productId, quantity);
         }
+
         /// <summary>
         /// This will add a new quantity to a specific product
         /// </summary>
@@ -56,9 +61,10 @@ namespace Ucrm
             }
             else
             {
-                productStock[productId] +=quantity;
-            }    
+                productStock[productId] += quantity;
+            }
         }
+
         /// <summary>
         /// This will remove quantity from the stock
         /// </summary>
@@ -73,13 +79,39 @@ namespace Ucrm
                 if (productStock[productId] >= quantity)
                 {
                     productStock[productId] -= quantity;
+                    if (productStock[productId] == 0)
+                    {
+                        if (PropertyChanged != null)
+                        {
+                            PropertyChanged.Invoke(this, new PropertyChangedEventArgs("ProductStock"));
+                        }
+                    }
                 }
                 else
                 {
-                    Console.Out.WriteLine("You have less items in stock than you would like to withdraw");
-                 }
-            } 
+                    throw new InsufficientStockException();
+                }
+            }
         }
+
+        /// <summary>
+        /// Searches the stock for products that have the specified tag(s)
+        /// </summary>
+        /// <returns></returns>
+        public Dictionary<Guid, int> Search()
+        {
+            Dictionary<Guid, int> res = new Dictionary<Guid, int>();
+            object tag;
+            foreach (var product in products)
+            {
+                if (product.HasTag(tag))
+                {
+                    res.Add(product.Id, productStock[product.Id]);
+                }
+            }
+            return res;
+        }
+
 
     }
 }

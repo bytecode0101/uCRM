@@ -14,8 +14,9 @@ namespace Ucrm
         public Payment PayMethod { get; set; }
         public Delivery Delivery { get; set; }
         public DateTime DeliveryTime { get; set; }
+        Dictionary<Guid, int> _Items;
 
-        public Order(Guid _UserId, Dictionary<Guid, int> _Items) : base(_UserId)
+        public Order(Guid _UserId, Cart cart) : base(_UserId)
         {
             PayMethod = 0;
             Delivery = 0;
@@ -24,7 +25,8 @@ namespace Ucrm
             Items = _Items;
         }
 
-        public Order(Guid _UserId, Dictionary<Guid, int> _Items, Payment _PayMethod) : base(_UserId)
+
+        public Order(Guid _UserId, Cart cart, Payment _PayMethod) : base(_UserId)
         {
             PayMethod = _PayMethod;
             Delivery = 0;
@@ -33,7 +35,7 @@ namespace Ucrm
             Items = _Items;
         }
 
-        public Order(Guid _UserId, Dictionary<Guid, int> _Items, Payment _PayMethod, Delivery _Delivery) : base(_UserId)
+        public Order(Guid _UserId, Cart cart, Payment _PayMethod, Delivery _Delivery) : base(_UserId)
         {
             PayMethod = _PayMethod;
             Delivery = _Delivery;
@@ -42,7 +44,7 @@ namespace Ucrm
             Items = _Items;
         }
 
-        public Order(Guid _UserId, Dictionary<Guid, int> _Items, Delivery _Delivery) : base(_UserId)
+        public Order(Guid _UserId, Cart cart, Delivery _Delivery) : base(_UserId)
         {
             PayMethod = 0;
             Delivery = _Delivery;

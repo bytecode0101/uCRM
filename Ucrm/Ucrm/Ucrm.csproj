@@ -49,24 +49,26 @@
     <Compile Include="Address.cs" />
     <Compile Include="Bill.cs" />
     <Compile Include="Campaign.cs" />
-    <Compile Include="Cart.cs" />
-    <Compile Include="Category.cs" />
+    <Compile Include="ItemManagement\Cart.cs" />
+    <Compile Include="ItemManagement\Category.cs" />
     <Compile Include="Channel.cs" />
     <Compile Include="ChooseCategory.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Delivery.cs" />
     <Compile Include="ILogin.cs" />
     <Compile Include="Invoice.cs" />
+    <Compile Include="ItemManagement\InsufficientStockException.cs" />
+    <Compile Include="ItemManagement\Tag.cs" />
     <Compile Include="Login_user.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="OrderStatus.cs" />
+    <Compile Include="Orders\Order.cs" />
+    <Compile Include="Orders\OrderStatus.cs" />
     <Compile Include="Pay.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PF.cs" />
     <Compile Include="PJ.cs" />
     <Compile Include="Pricing.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="ItemManagement\Product.cs" />
     <Compile Include="PromotionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveProduct.cs" />
@@ -75,11 +77,21 @@
     <Compile Include="SearchProduct.cs" />
     <Compile Include="SetPrice.cs" />
     <Compile Include="ShowCart.cs" />
-    <Compile Include="Stock.cs" />
+    <Compile Include="ItemManagement\Stock.cs" />
+    <Compile Include="StockManagement\PDBSerialisation.cs" />
+    <Compile Include="StockManagement\Product.cs" />
+    <Compile Include="StockManagement\ProductDatabase.cs" />
+    <Compile Include="StockManagement\ProductStatus.cs" />
     <Compile Include="SubCategory.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Campaigns\" />
+    <Folder Include="Delivery\" />
+    <Folder Include="Priceing\" />
+    <Folder Include="Reporting\" />
+    <Folder Include="UserManagement\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Documentation\Gestionare Campanii%28Promotii%29%281%29.pdf" />
     <None Include="packages.config" />
