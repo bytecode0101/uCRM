@@ -74,6 +74,10 @@
     <Compile Include="RemoveProduct.cs" />
     <Compile Include="ReturnProduct.cs" />
     <Compile Include="Role.cs" />
+    <Compile Include="ItemManagement\SearchByName.cs" />
+    <Compile Include="ItemManagement\SearchByPrice.cs" />
+    <Compile Include="ItemManagement\SearchByTag.cs" />
+    <Compile Include="ItemManagement\SearchEngine.cs" />
     <Compile Include="SearchProduct.cs" />
     <Compile Include="SetPrice.cs" />
     <Compile Include="ShowCart.cs" />
@@ -94,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Documentation\Gestionare Campanii%28Promotii%29%281%29.pdf" />
+    <None Include="ItemManagement\ProductSearch.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
