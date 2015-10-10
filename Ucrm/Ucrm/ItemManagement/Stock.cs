@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System;
 using System.ComponentModel;
+using StockManagement;
 
 namespace Ucrm.ItemManagement
 {
@@ -14,8 +15,9 @@ namespace Ucrm.ItemManagement
         /// </summary>
         private Dictionary<Guid, int> productStock;
 
-        private List<Product> products;
+        public List<Product> Products { get; set; }
         public AbstractSearchEngine SearchEngine { get; set; }
+        
 
         public Stock()
         {
@@ -103,14 +105,19 @@ namespace Ucrm.ItemManagement
         {
             Dictionary<Guid, int> res = new Dictionary<Guid, int>();
             object tag;
-            foreach (var product in products)
+            foreach (var product in Products)
             {
                 
             }
             return res;
         }
 
-      
+      public List<SearchResult> Search(String S)
+        {
+            var finalResult = new List<SearchResult>();
+            SearchEngine.Search(S, this.Products, finalResult);
+            return finalResult;
+        }
 
     }
 }
