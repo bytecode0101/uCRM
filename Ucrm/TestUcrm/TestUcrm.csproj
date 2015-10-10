@@ -44,6 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Order Handling\AddToCart.cs" />
+    <Compile Include="Order Handling\CancelOrder.cs" />
+    <Compile Include="Order Handling\ConfirmOrder.cs" />
+    <Compile Include="Order Handling\ListOrder.cs" />
+    <Compile Include="Order Handling\PrintOrderDetails.cs" />
+    <Compile Include="Order Handling\RemoveProduct.cs" />
+    <Compile Include="Order Handling\ShowCart.cs" />
+    <Compile Include="Order Handling\SubmitOrder.cs" />
+    <Compile Include="Payment\Invoicing.cs" />
     <Compile Include="TestCart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -56,6 +65,7 @@
       <Name>Ucrm</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

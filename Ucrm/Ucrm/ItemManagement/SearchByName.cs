@@ -10,6 +10,12 @@ namespace Ucrm
     {
         List<Product> product_list;
         Product product;
+
+        /// <summary>
+        /// Ioana - 
+        /// </summary>
+        /// <param name="S"></param>
+        /// <returns></returns>
         public override List<Product> Search(string S)
         {
             if (S == product.Name)
@@ -19,9 +25,9 @@ namespace Ucrm
 
             if (product.Name.Contains(S))
             {
-                product_list.Add(S);
+                product_list.Add(product);
             }
-
+            return product_list;
 
         }
     }
