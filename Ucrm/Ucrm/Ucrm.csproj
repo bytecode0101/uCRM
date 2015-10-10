@@ -79,6 +79,7 @@
     <Compile Include="ItemManagement\SearchByTag.cs" />
     <Compile Include="ItemManagement\SearchEngine.cs" />
     <Compile Include="SearchProduct.cs" />
+    <Compile Include="SearchResult.cs" />
     <Compile Include="SetPrice.cs" />
     <Compile Include="ShowCart.cs" />
     <Compile Include="ItemManagement\Stock.cs" />
