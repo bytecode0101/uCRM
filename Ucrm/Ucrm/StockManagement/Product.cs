@@ -17,13 +17,14 @@ namespace StockManagement
         int amount;
         ProdStatus prodStatus;
         Guid pId;
+        float price;
         
 
 
         /// <summary>
         /// Product Properties/getters+setters
         /// </summary>
-        public string ProdName
+        public string Name
         {
             get
             {
@@ -36,7 +37,7 @@ namespace StockManagement
             }
         }
 
-        public string ProdCategory
+        public string Category
         {
             get
             {
@@ -49,7 +50,7 @@ namespace StockManagement
             }
         }
 
-        public string ProdSubCategory
+        public string SubCategory
         {
             get
             {
@@ -62,7 +63,7 @@ namespace StockManagement
             }
         }
 
-        public string ProdExtraInfo
+        public string ExtraInfo
         {
             get
             {
@@ -88,7 +89,7 @@ namespace StockManagement
             }
         }
 
-        public ProdStatus ProdStatus
+        public ProdStatus Status
         {
             get
             {
@@ -101,7 +102,7 @@ namespace StockManagement
             }
         }
 
-        public Guid PId
+        public Guid Id
         {
             get
             {
@@ -111,6 +112,19 @@ namespace StockManagement
             set
             {
                 pId = value;
+            }
+        }
+
+        public float Price
+        {
+            get
+            {
+                return price;
+            }
+
+            set
+            {
+                price = value;
             }
         }
     }

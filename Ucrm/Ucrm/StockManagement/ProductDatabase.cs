@@ -34,7 +34,7 @@ namespace StockManagement
         {
             foreach (var item in listaProduse)
             {
-                if(item.ProdName == srcname)
+                if(item.Name == srcname)
                 {
                     productobj = item;
                 }

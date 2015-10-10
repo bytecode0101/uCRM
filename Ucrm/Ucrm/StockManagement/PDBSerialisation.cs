@@ -19,7 +19,7 @@ namespace StockManagement
         {
             using(StreamWriter swo = new StreamWriter(stream, swo.Encoding))
             {
-                swo.WriteLine(pobj.ProdName + " , " + pobj.ProdCategory + " , " + pobj.ProdSubCategory + " , " + pobj.Amount + " , " + pobj.ProdStatus + " , " + pobj.PId + " , " + pobj.ProdExtraInfo);
+                swo.WriteLine(pobj.Name + " , " + pobj.Category + " , " + pobj.SubCategory + " , " + pobj.Amount + " , " + pobj.Status + " , " + pobj.Id + " , " + pobj.ExtraInfo);
                 swo.Flush();
                
             }

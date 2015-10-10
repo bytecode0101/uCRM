@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using StockManagement;
 using System;
 using Ucrm;
 
