@@ -14,12 +14,12 @@ namespace Ucrm
     class Role
     {
         private string Desc;
-        private string Title; 
+        private string Title;
 
         public string desc { get; set; }
         public string title { get; set; }
 
-        
+
         public Role()
         {
 
@@ -34,7 +34,7 @@ namespace Ucrm
             if (FirstUser.login_user.User_in_account == true)
             {
                 if (FirstUser.name.Contains("seller") || FirstUser.name.Contains("Seller"))
-                    {
+                {
 
                     this.Desc = "This is a seller account";
                     this.Title = "Seller";
@@ -45,13 +45,13 @@ namespace Ucrm
                     this.Title = "Client";
                 }
             }
-            else {
+            else
+            {
                 FirstUser.login_user.Login();
             }
-            }
-            } 
         }
     }
-    
+}
+
 
 

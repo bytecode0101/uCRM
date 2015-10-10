@@ -104,10 +104,7 @@ namespace Ucrm.ItemManagement
             object tag;
             foreach (var product in products)
             {
-                if (product.HasTag(tag))
-                {
-                    res.Add(product.Id, productStock[product.Id]);
-                }
+                
             }
             return res;
         }
