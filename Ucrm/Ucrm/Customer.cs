@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ucrm
+﻿namespace Ucrm
 {
     /// <summary>
     /// This class will repreent the customer with all the actions that he can perform

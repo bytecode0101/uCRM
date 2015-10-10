@@ -1,12 +1,9 @@
 ﻿using StockManagement;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Ucrm
 {
-    public abstract class SearchEngine
+    public abstract class AbstractSearchEngine
     {
         List<Product> product_list;
         

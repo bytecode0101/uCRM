@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-
-namespace Ucrm
+﻿namespace Ucrm
 {
     class Bill
     {

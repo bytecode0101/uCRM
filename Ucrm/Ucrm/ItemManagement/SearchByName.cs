@@ -1,21 +1,14 @@
 ﻿using StockManagement;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Ucrm
 {
-    public class SearchByName : SearchEngine
+    public class SearchByName : AbstractSearchEngine
     {
         List<Product> product_list;
         Product product;
 
-        /// <summary>
-        /// Ioana - 
-        /// </summary>
-        /// <param name="S"></param>
-        /// <returns></returns>
+       
         public override List<Product> Search(string S)
         {
             if (S == product.Name)

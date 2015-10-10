@@ -93,11 +93,10 @@
     <Compile Include="ItemManagement\SearchByName.cs" />
     <Compile Include="ItemManagement\SearchByPrice.cs" />
     <Compile Include="ItemManagement\SearchByTag.cs" />
-    <Compile Include="ItemManagement\SearchEngine.cs" />
+    <Compile Include="ItemManagement\AbstractSearchEngine.cs" />
     <Compile Include="SearchProduct.cs" />
     <Compile Include="SearchResult.cs" />
     <Compile Include="Priceing\SetPrice.cs" />
-    <Compile Include="ShowCart.cs" />
     <Compile Include="ItemManagement\Stock.cs" />
     <Compile Include="StockManagement\PDBSerialisation.cs" />
     <Compile Include="StockManagement\Product.cs" />
@@ -110,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Campaigns\" />
+    <Folder Include="Curierat\" />
     <Folder Include="Delivery\" />
     <Folder Include="Reporting\" />
   </ItemGroup>

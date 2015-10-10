@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace Ucrm
+﻿namespace Ucrm
 {
     /// <summary>
     /// Assignes a role to each user - controls access rights (Client/Seller)

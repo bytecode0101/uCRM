@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ucrm
+﻿namespace Ucrm
 {
     /// <summary>
     /// AddProductToDB class adds a product to the database based on some criteria

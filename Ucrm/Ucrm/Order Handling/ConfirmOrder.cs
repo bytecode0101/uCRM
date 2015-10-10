@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TestUcrm.Order_Handling
+﻿namespace TestUcrm.Order_Handling
 {
     class ConfirmOrder
     {

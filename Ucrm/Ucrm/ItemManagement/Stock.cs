@@ -15,6 +15,7 @@ namespace Ucrm.ItemManagement
         private Dictionary<Guid, int> productStock;
 
         private List<Product> products;
+        public AbstractSearchEngine SearchEngine { get; set; }
 
         public Stock()
         {
@@ -109,6 +110,7 @@ namespace Ucrm.ItemManagement
             return res;
         }
 
+      
 
     }
 }
