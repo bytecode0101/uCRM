@@ -2,17 +2,16 @@
 using StockManagement;
 using System.Collections.Generic;
 
-namespace Ucrm
+namespace Ucrm.ItemManagement
 {
     public class SearchResult
     {
-        string Description { get; set; }
-
-        List<Product> products
+        public SearchResult()
         {
-            get; set;
+            this.listProducts = new List<Product>();
         }
-        public SearchResult Results;
-        
+        public string Description { get; set; }
+        public List<Product> listProducts { get; set; }
+
     }
 }

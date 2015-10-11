@@ -48,13 +48,14 @@
     <Compile Include="AddProductToDB.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Bill.cs" />
-    <Compile Include="Campaign.cs" />
+    <Compile Include="Campaigns\Campaign.cs" />
     <Compile Include="ItemManagement\Cart.cs" />
     <Compile Include="ItemManagement\Category.cs" />
     <Compile Include="Channel.cs" />
     <Compile Include="ChooseCategory.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Delivery.cs" />
+    <Compile Include="ItemManagement\SearchByCategory.cs" />
     <Compile Include="Order Handling\AddToCart.cs" />
     <Compile Include="Order Handling\CancelOrder.cs" />
     <Compile Include="Order Handling\ConfirmOrder.cs" />
@@ -81,17 +82,15 @@
     <Compile Include="Orders\Order.cs" />
     <Compile Include="Orders\OrderStatus.cs" />
     <Compile Include="Payment\Pay.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="UserManagement\PF.cs" />
     <Compile Include="UserManagement\PJ.cs" />
     <Compile Include="Pricing.cs" />
-    <Compile Include="PromotionType.cs" />
+    <Compile Include="Campaigns\PromotionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ItemManagement\ReturnProduct.cs" />
     <Compile Include="UserManagement\Role.cs" />
     <Compile Include="ItemManagement\SearchByName.cs" />
     <Compile Include="ItemManagement\AbstractSearchEngine.cs" />
-    <Compile Include="SearchProduct.cs" />
     <Compile Include="ItemManagement\SearchResult.cs" />
     <Compile Include="Priceing\SetPrice.cs" />
     <Compile Include="ItemManagement\Stock.cs" />
@@ -105,7 +104,6 @@
     <Compile Include="UserManagement\Logout.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Campaigns\" />
     <Folder Include="Curierat\" />
     <Folder Include="Delivery\" />
     <Folder Include="Reporting\" />

@@ -104,7 +104,7 @@ namespace Ucrm.ItemManagement
         public Dictionary<Guid, int> Search()
         {
             Dictionary<Guid, int> res = new Dictionary<Guid, int>();
-            object tag;
+            
             foreach (var product in Products)
             {
                 
@@ -112,10 +112,16 @@ namespace Ucrm.ItemManagement
             return res;
         }
 
-      public List<SearchResult> Search(String S)
+        /// <summary>
+        /// Delegate the Search to the Search chain
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public List<SearchResult> Search(string text)
         {
-            var finalResult = new List<SearchResult>();
-            SearchEngine.Search(S, this.Products, finalResult);
+            List<SearchResult> finalResult = new List<SearchResult>();
+            SearchEngine.Search(text, this.Products, finalResult);
+            //seByName.Search(text, this.Products, finalResult);
             return finalResult;
         }
 

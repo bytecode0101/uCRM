@@ -1,10 +1,13 @@
 ﻿using StockManagement;
+using System;
 using System.Collections.Generic;
-
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Ucrm.ItemManagement
 {
-    public class SearchByName : AbstractSearchEngine
+    public class SearchByCategory : AbstractSearchEngine
     {
         public override void Search(string strKey, List<Product> lstProducts, List<SearchResult> finalResult)
         {
@@ -15,11 +18,11 @@ namespace Ucrm.ItemManagement
 
             //List<SearchResult> finalResult = new List<SearchResult>();
             SearchResult = new SearchResult();
-            SearchResult.Description = "Cautarea dupa Titlu(name)";
+            SearchResult.Description = "Cautarea dupa Categorie";
 
             foreach (Product item in lstProducts)
             {
-                if (item.Name.Contains(strKey))
+                if (item.Category.Contains(strKey))
                 {
                     SearchResult.listProducts.Add(item);
                 }
