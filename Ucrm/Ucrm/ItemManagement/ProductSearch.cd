@@ -1,39 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Ucrm.SearchEngine">
-    <Position X="4" Y="1" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
-      <FileName>ItemManagement\SearchEngine.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Ucrm.SearchByTag">
-    <Position X="6.5" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
-      <FileName>ItemManagement\SearchByTag.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Ucrm.SearchByName">
-    <Position X="3.75" Y="3" Width="1.5" />
+  <Class Name="Ucrm.ItemManagement.SearchByName">
+    <Position X="4.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
       <FileName>ItemManagement\SearchByName.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Ucrm.SearchByPrice">
-    <Position X="1" Y="2.5" Width="1.5" />
+  <Class Name="Ucrm.ItemManagement.SearchResult">
+    <Position X="2.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
-      <FileName>ItemManagement\SearchByPrice.cs</FileName>
+      <HashCode>AAAAAAAgAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ItemManagement\SearchResult.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Ucrm.SearchResult">
-    <Position X="7.75" Y="0.5" Width="1.5" />
+  <Class Name="Ucrm.ItemManagement.SearchByCategory">
+    <Position X="6.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SearchResult.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ItemManagement\SearchByCategory.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="Ucrm.ItemManagement.AbstractSearchEngine">
+    <Position X="5.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAgAAA=</HashCode>
+      <FileName>ItemManagement\AbstractSearchEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ucrm.ItemManagement.Stock">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAIAEAAAAAAAABAAgAAQAgAAAAAAAAAgAAQ=</HashCode>
+      <FileName>ItemManagement\Stock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
