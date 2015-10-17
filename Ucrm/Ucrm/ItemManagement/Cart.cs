@@ -1,6 +1,7 @@
 ﻿using StockManagement;
 using System;
 using System.Collections.Generic;
+using OrderManager;
 
 namespace Ucrm
 {
@@ -51,7 +52,7 @@ namespace Ucrm
                 
         public void SubmitOrder()
         {
-            var order1 = new Order(UserId, this);
+            var order1 = new Order();
         }
 
     }

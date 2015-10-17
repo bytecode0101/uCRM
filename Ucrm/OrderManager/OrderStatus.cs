@@ -1,4 +1,4 @@
-﻿namespace Ucrm
+﻿namespace OrderManager
 {
     public enum OrderStatus
     {

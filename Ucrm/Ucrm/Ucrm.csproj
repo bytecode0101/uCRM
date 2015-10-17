@@ -56,14 +56,6 @@
     <Compile Include="Customer.cs" />
     <Compile Include="Delivery.cs" />
     <Compile Include="ItemManagement\SearchByCategory.cs" />
-    <Compile Include="Order Handling\AddToCart.cs" />
-    <Compile Include="Order Handling\CancelOrder.cs" />
-    <Compile Include="Order Handling\ConfirmOrder.cs" />
-    <Compile Include="Order Handling\ListOrder.cs" />
-    <Compile Include="Order Handling\PrintOrderDetails.cs" />
-    <Compile Include="Order Handling\RemoveProduct.cs" />
-    <Compile Include="Order Handling\ShowCart.cs" />
-    <Compile Include="Order Handling\SubmitOrder.cs" />
     <Compile Include="Payment\Class1.cs" />
     <Compile Include="Payment\ConcretePayment.cs" />
     <Compile Include="Payment\ConfirmPAyment.cs" />
@@ -79,8 +71,6 @@
     <Compile Include="ItemManagement\RemoveProductFromOffer.cs" />
     <Compile Include="ItemManagement\Tag.cs" />
     <Compile Include="UserManagement\Login_user.cs" />
-    <Compile Include="Orders\Order.cs" />
-    <Compile Include="Orders\OrderStatus.cs" />
     <Compile Include="Payment\Pay.cs" />
     <Compile Include="UserManagement\PF.cs" />
     <Compile Include="UserManagement\PJ.cs" />
@@ -112,6 +102,12 @@
     <None Include="Documentation\Gestionare Campanii%28Promotii%29%281%29.pdf" />
     <None Include="ItemManagement\ProductSearch.cd" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OrderManager\OrderManager.csproj">
+      <Project>{419d348e-e8b5-482d-88eb-5456b10539c4}</Project>
+      <Name>OrderManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
