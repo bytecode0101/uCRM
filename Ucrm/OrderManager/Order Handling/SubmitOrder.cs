@@ -1,6 +1,7 @@
 ﻿namespace TestUcrm.Order_Handling
 {
-    class SubmitOrder
+    public class SubmitOrder
     {
+
     }
 }

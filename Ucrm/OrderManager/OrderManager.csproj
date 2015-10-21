@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manager.cs" />
     <Compile Include="Order Handling\AddToCart.cs" />
     <Compile Include="Order Handling\CancelOrder.cs" />
     <Compile Include="Order Handling\ConfirmOrder.cs" />
